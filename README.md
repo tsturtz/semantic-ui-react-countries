@@ -19,7 +19,7 @@ Creates/overwrites file in current directory
 
 ### Flags
 - Const name `(-n, --name)`
-- Path and file name `(-p, --path)`
+- Path and file name relative to current working directory `(-p, --path)`
 - Exclude flag attribute `(--no-flags)`
 ```console
 $ get-countries -n MY_COUNTRIES_DATA -p ./src/js/common/countries.js --no-flags

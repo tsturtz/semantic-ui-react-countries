@@ -16,7 +16,7 @@ program
   .option('--no-flags', 'Do not include flag attribute.')
   .action(function(file) {
     console.log('Export const name:', chalk.magenta(program.name));
-    console.log('Writing to file path:', chalk.magenta(program.path));
+    console.log('Writing to file path:', chalk.magenta(process.cwd() + program.path));
     console.log('Include flags attribute:', chalk.magenta(program.flags));
   })
   .parse(process.argv);
@@ -34,7 +34,7 @@ const datahub = 'https://datahub.io/core/country-list/datapackage.json';
         const response = await axios.get(dataset.resources[id].path);
 
         fetching.succeed();
-        writing = ora('Writing file to path ' + program.path).start();
+        writing = ora('Writing file to path ' + process.cwd() + program.path).start();
 
         const countryData = response.data.map((country) => {
           const obj = {
@@ -52,7 +52,7 @@ const datahub = 'https://datahub.io/core/country-list/datapackage.json';
         });
 
         fs.writeFile(
-          program.path,
+          process.cwd() + program.path,
           'export const ' + program.name + ' = ' + JSON.stringify(countryData),
           (err) => {
             if (err) {
@@ -60,7 +60,7 @@ const datahub = 'https://datahub.io/core/country-list/datapackage.json';
             } else {
               writing.succeed();
               console.log(chalk.grey('export const ' + program.name + ' = ' + JSON.stringify(countryData)).substr(0, 500) + ' ...');
-              console.log(chalk.green('✔'), chalk.green(program.path), 'has been updated successfully!');
+              console.log(chalk.green('✔'), chalk.green(process.cwd() + program.path), 'has been updated successfully!');
             }
           }
         );
