@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/tsturtz/semantic-ui-react-countries"
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ISO-3166-1 countries data formatter and updater for semantic ui react dropdown component.",
   "main": "index.js",
   "bin": {
