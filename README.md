@@ -1,4 +1,4 @@
-# semantic-ui-react-countries [![Build Status](https://travis-ci.com/tsturtz/semantic-ui-react-countries.svg?branch=master)](https://travis-ci.com/tsturtz/semantic-ui-react-countries)
+# semantic-ui-react-countries [![Build Status](https://travis-ci.com/tsturtz/semantic-ui-react-countries.svg?branch=master)](https://travis-ci.com/tsturtz/semantic-ui-react-countries) [![npm version](https://badge.fury.io/js/semantic-ui-react-countries.svg)](https://badge.fury.io/js/semantic-ui-react-countries)
 
 A simple tool for fetching and parsing ISO-3166-1 country data for use in Semantic UI React dropdown components. Data source: [datahub.io](https://datahub.io).
 
