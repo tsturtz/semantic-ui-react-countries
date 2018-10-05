@@ -1,6 +1,6 @@
 # semantic-ui-react-countries
 
-A simple tool for fetching and parsing ISO-3166-1 country data for use in Semantic UI React dropdown components. Data source: datahub.io.
+A simple tool for fetching and parsing ISO-3166-1 country data for use in Semantic UI React dropdown components. Data source: [datahub.io](https://datahub.io).
 
 ## Install
 ```console
