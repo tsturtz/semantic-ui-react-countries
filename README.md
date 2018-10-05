@@ -4,7 +4,7 @@ A simple tool for fetching and parsing ISO-3166-1 country data for use in Semant
 
 ## Install
 ```console
-$ npm install -g get-countries
+$ npm install -g semantic-ui-react-countries
 ```
 
 ## Usage

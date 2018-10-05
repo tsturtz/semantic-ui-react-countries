@@ -12,7 +12,7 @@ const ora = require('ora');
 program
   .version('0.1.0', '-v --version')
   .option('-n, --name <name>', 'The name of the constant to be exported.', 'COUNTRY_OPTIONS')
-  .option('-p, --path <path>', 'The path that the file should be written to.', (__dirname + '/countriesData.js'))
+  .option('-p, --path <path>', 'The path that the file should be written to.', (process.cwd() + '/countriesData.js'))
   .option('--no-flags', 'Do not include flag attribute.')
   .action(function(file) {
     console.log('Export const name:', chalk.magenta(program.name));
