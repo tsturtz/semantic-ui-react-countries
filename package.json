@@ -30,7 +30,7 @@
   "author": "Taylor Sturtz",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": ">=0.18.1",
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
     "data.js": "^0.11.5",
