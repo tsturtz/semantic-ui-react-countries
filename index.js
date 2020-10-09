@@ -45,7 +45,7 @@ const datahub = 'https://datahub.io/core/country-list/datapackage.json';
           if (program.flags) {
             return {
               ...obj,
-              flag: country.Code
+              flag: (country.Code ? country.Code.toLowerCase() : '')
             }
           }
           return obj;
